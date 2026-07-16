@@ -429,9 +429,13 @@ a:hover {
 /* Table Styles */
 .post-content table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: var(--space-lg) 0;
   font-size: 0.9em;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
 }
 
 .post-content table th,
@@ -444,11 +448,7 @@ a:hover {
 .post-content table th {
   font-weight: 600;
   color: var(--color-text);
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-.post-content table tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: var(--highlight-background);
 }
 
 .post-content table tr:last-child td {
@@ -458,7 +458,7 @@ a:hover {
 /* Highlight Variables */
 :root {
   --highlight-keyword: #1c6b48;
-  --highlight-background: #F3F1EF;
+  --highlight-background: #E0DCDA;
   --highlight-inline-code: #F5F2EF;
   --highlight-comment: #a0ada0;
   --highlight-foreground: #393a34;
@@ -644,7 +644,7 @@ a:hover {
   align-items: center;
   padding: 8px 12px;
   margin: calc(-1 * var(--space-md)) calc(-1 * var(--space-md)) var(--space-md);
-  background-color: #F3F1EF;
+  background-color: #E0DCDA;
   border-bottom: 1px solid #C6BFBA;
   border-radius: 8px 8px 0 0;
 }
@@ -914,6 +914,8 @@ a:hover {
 
   .header-bar {
     border-color: #3a3a3a;
+    color: #e8e4df;
+    background-color: #2a2a2a;
   }
 
   .post-content code {
@@ -924,8 +926,41 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.05);
   }
 
+  .code-header {
+    background-color: #2a2a2a;
+    border-bottom-color: #3a3a3a;
+  }
+
+  .code-lang {
+    color: #9a9a9a;
+  }
+
+  .code-copy-btn {
+    border-color: #3a3a3a;
+    color: #9a9a9a;
+  }
+
+  .code-copy-btn:hover {
+    background-color: #3a3a3a;
+    border-color: #9a9a9a;
+    color: #e8e4df;
+  }
+
+  .post-content table th {
+    background-color: #2a2a2a;
+  }
+
+  .post-content table {
+    border-color: #3a3a3a;
+  }
+
   .tag:hover {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .back-to-top {
+    background-color: #3a3a3a;
+    color: #e8e4df;
   }
 }
 

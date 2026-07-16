@@ -23,7 +23,7 @@
 
 ```bash
 cd themes
-git clone https://github.com/xsugarlee/hugo-theme-monigo.git xsugarlee
+git clone https://github.com/xsugarlee/xsugarlee.github.io.git xsugarlee
 ```
 
 ## 配置
@@ -88,7 +88,7 @@ Front Matter 示例：
 ```yaml
 ---
 title: "文章标题"
-date: 2026-07-16
+date: 2024-01-01
 author: "作者名"
 tags: ["tag1", "tag2"]
 thumbnail: "thumbnail.jpg"
@@ -105,4 +105,4 @@ hugo server -D
 
 ## License
 
-CC BY-NC-SA 4.0
+MIT
