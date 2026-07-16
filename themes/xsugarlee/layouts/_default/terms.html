@@ -1,0 +1,19 @@
+{{ define "header" }}
+<div class="header-bar">
+  <a href="/">Back</a>
+</div>
+{{ end }}
+
+{{ define "main" }}
+<div class="list-page">
+  <h1 class="list-title">{{ .Title }}</h1>
+  {{ range .Data.Terms.Alphabetical }}
+  <div class="post-item">
+    <h2 class="post-title">
+      <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+    </h2>
+    <span class="post-date">{{ .Count }} items</span>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

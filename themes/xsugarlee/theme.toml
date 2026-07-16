@@ -1,0 +1,25 @@
+name = "xsugarlee"
+license = "MIT"
+licenselink = "https://github.com/xsugarlee/xsugarlee.github.io/blob/main/LICENSE"
+description = "A minimal, monospace-driven Hugo blog theme."
+tags = ["minimal", "monospace", "blog", "responsive", "dark-mode", "code"]
+features = ["responsive", "dark-mode", "seo-friendly", "code-highlight", "minimal"]
+min_version = "0.100.0"
+
+[author]
+  name = "xsugarlee"
+  homepage = "https://xsugarlee.github.io/"
+
+[params]
+  description = "A minimal, monospace-driven blog."
+  author = "xsugarlee"
+
+  [params.style]
+    fontFamily = "Maple Mono, PingFang SC, 苹方-简, sans-serif"
+    colorTextPrimary = "#1d1b1b"
+    colorSurfaceRaised = "#fbf9f6"
+    colorBorderStrong = "#c5c1bb"
+
+  [params.social]
+    github = "xsugarlee"
+    twitter = "xsugarlee"

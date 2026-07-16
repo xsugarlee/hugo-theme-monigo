@@ -1,0 +1,44 @@
+{{ define "header" }}
+<div class="header-bar">
+  <a href="/">Back</a>
+</div>
+{{ end }}
+
+{{ define "main" }}
+<div class="list-page">
+  <h1 class="list-title">{{ .Title }}</h1>
+  {{ range .Paginator.Pages }}
+  <div class="post-item">
+    <h2 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <time class="post-date" datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+    {{ with .Description }}
+    <p class="post-description">{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ if gt .Paginator.TotalPages 1 }}
+  <nav class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="pagination-prev">← 上一页</a>
+    {{ end }}
+
+    <div class="pagination-numbers">
+      {{ range .Paginator.Pagers }}
+      {{ if eq . $.Paginator }}
+      <span class="pagination-current">{{ .PageNumber }}</span>
+      {{ else }}
+      <a href="{{ .URL }}" class="pagination-number">{{ .PageNumber }}</a>
+      {{ end }}
+      {{ end }}
+    </div>
+
+    {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="pagination-next">下一页 →</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+</div>
+{{ end }}

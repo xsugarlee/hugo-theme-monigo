@@ -1,0 +1,31 @@
+baseURL: "https://xsugarlee.github.io/"
+locale: "zh-tw"
+title: "xsugarlee"
+theme: "xsugarlee"
+
+enableRobotsTXT: true
+paginate: 10
+summaryLength: 70
+
+markup:
+  highlight:
+    noClasses: false
+    style: monokailight
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - name: "Writing"
+      url: "/posts/"
+      weight: 10
+
+params:
+  description: "A minimal, monospace-driven blog."
+  author: "xsugarlee"
+  email: "ashurdevprogram@gmail.com"
+
+  social:
+    github: "xsugarlee"
+    twitter: "xsugarlee"
