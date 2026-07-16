@@ -23,7 +23,7 @@
 
 ```bash
 cd themes
-git clone https://github.com/xsugarlee/xsugarlee.github.io.git xsugarlee
+git clone https://github.com/xsugarlee/hugo-theme-monigo.git xsugarlee
 ```
 
 ## 配置
@@ -32,7 +32,7 @@ git clone https://github.com/xsugarlee/xsugarlee.github.io.git xsugarlee
 baseURL: "https://your-domain.com/"
 locale: "zh-tw"
 title: "Your Blog Title"
-theme: "xsugarlee"
+theme: "MoniGo"
 
 enableRobotsTXT: true
 paginate: 10
@@ -88,7 +88,7 @@ Front Matter 示例：
 ```yaml
 ---
 title: "文章标题"
-date: 2024-01-01
+date: 2026-07-16
 author: "作者名"
 tags: ["tag1", "tag2"]
 thumbnail: "thumbnail.jpg"
